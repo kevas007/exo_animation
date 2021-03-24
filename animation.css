@@ -1,0 +1,63 @@
+div {
+   animation: kev ;
+   animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate-reverse;  
+  animation-iteration-count: 2;
+
+ 
+    
+}
+@keyframes mymove {
+from{
+  left: 0px;
+}
+to{
+  left: 200px;
+}
+}
+@keyframes kev{
+  0%{
+    left: 0px;
+    top: 0px;
+  }
+  25%{
+    left:220px;
+    top:0px;
+  }
+  50%{
+    left: 220px;
+    top: 220px;
+  }
+  75%
+  {
+    left:0px;
+    top: 220px;
+  }
+  100%{
+    left:0px;
+    top:0px;
+  }
+}
+div:hover{
+  animation-play-state: paused;
+}
+
+#bounce-title{  
+  animation: kt 1s;
+  
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: relative;
+  }
+@keyframes kt {
+  0%{
+    bottom: 100px;
+
+  }
+  100%{
+    bottom: -5%;
+    transform: scaleY(0.5);
+  }
+}
